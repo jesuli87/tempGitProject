@@ -7,7 +7,7 @@
     <element xsi:type="archimate:BusinessObject" name="Salesforce" id="id-204d54ba13074a268fa2088434aa7826"/>
     <element xsi:type="archimate:BusinessObject" name="Integration Platform" id="id-80c2c5142ef64705a54706cbe79d92e5"/>
     <element xsi:type="archimate:BusinessObject" name="M365" id="id-19fe6221977749ebb4acc6c66c050c6f"/>
-    <element xsi:type="archimate:BusinessObject" name="Business Object" id="id-99aa4f5a6625486494c2e059576bd59f"/>
+    <element xsi:type="archimate:BusinessObject" name="RandomNewSystem" id="id-99aa4f5a6625486494c2e059576bd59f"/>
   </folder>
   <folder name="Application" id="id-ad7b7c1a10be42ce9ab78cd1997ab250" type="application"/>
   <folder name="Technology &amp; Physical" id="id-e9e6670c6848407e9cc3208790599961" type="technology">
