@@ -59,5 +59,16 @@
         <bounds x="209" y="459" width="120" height="55"/>
       </child>
     </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="TestiView" id="id-5f2b0a5e594a42a6a9dd0d952dd1f122">
+      <child xsi:type="archimate:DiagramObject" id="id-9edf4b5c7e1043898e7bea9bf9951ace" archimateElement="id-7e43d13031774c98a9685737942925da">
+        <bounds x="252" y="234" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ecfbaf510ab141b3aaa4734857fa8e2f" archimateElement="id-092f8b058ab94345b59fc2b62d1f63ac">
+        <bounds x="548" y="256" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e63900d8c06744d5829cddbf368bfe64" archimateElement="id-204d54ba13074a268fa2088434aa7826">
+        <bounds x="471" y="346" width="120" height="55"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>

@@ -11,6 +11,7 @@
     <element xsi:type="archimate:BusinessObject" name="NewItem" id="id-41fdf4615fb345f081e420175a03f15d"/>
     <element xsi:type="archimate:BusinessProcess" name="Testi Karoliina" id="id-557cb63153a44f79b1a87984a1f92012"/>
     <element xsi:type="archimate:BusinessActor" name="Karoliina" id="id-092f8b058ab94345b59fc2b62d1f63ac"/>
+    <element xsi:type="archimate:BusinessRole" name="Jesse Muutos" id="id-fa7491334f06400895cf408f93f98215"/>
   </folder>
   <folder name="Application" id="id-ad7b7c1a10be42ce9ab78cd1997ab250" type="application"/>
   <folder name="Technology &amp; Physical" id="id-e9e6670c6848407e9cc3208790599961" type="technology">
@@ -53,6 +54,9 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-9973ef9595db4193804b30da42efc242" archimateElement="id-092f8b058ab94345b59fc2b62d1f63ac">
         <bounds x="852" y="318" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-873f3160a84b4c788416f1a0f951d0cf" archimateElement="id-fa7491334f06400895cf408f93f98215">
+        <bounds x="209" y="459" width="120" height="55"/>
       </child>
     </element>
   </folder>
