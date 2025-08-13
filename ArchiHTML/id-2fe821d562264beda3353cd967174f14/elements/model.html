@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>(new model)</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>(new model)</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-2fe821d562264beda3353cd967174f14", type:"ArchimateModel", name:decodeURL("%28new+model%29"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-3d700f337e7546a5b70a55860fbc5cdf", contenttype:"Folder"});
+								dataFolders.push({id:"id-3d700f337e7546a5b70a55860fbc5cdf", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-7a156f1223eb46f79363505319a738b7", contenttype:"Folder"});
+								dataFolders.push({id:"id-7a156f1223eb46f79363505319a738b7", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-7e43d13031774c98a9685737942925da", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-7e43d13031774c98a9685737942925da", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("Actor+1"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-d77ff439c93b454dbfcc82f3e6cb1a45", contenttype:"BusinessActor"});
+										dataElements.push({id:"id-d77ff439c93b454dbfcc82f3e6cb1a45", type:"BusinessActor", specialization:decodeURL(""), name:decodeURL("Actor+2"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-204d54ba13074a268fa2088434aa7826", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-204d54ba13074a268fa2088434aa7826", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("Salesforce"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-80c2c5142ef64705a54706cbe79d92e5", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-80c2c5142ef64705a54706cbe79d92e5", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("Integration+Platform"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-19fe6221977749ebb4acc6c66c050c6f", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-19fe6221977749ebb4acc6c66c050c6f", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("M365"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-99aa4f5a6625486494c2e059576bd59f", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-99aa4f5a6625486494c2e059576bd59f", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("RandomNewSystem"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7a156f1223eb46f79363505319a738b7", contentid:"id-41fdf4615fb345f081e420175a03f15d", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-41fdf4615fb345f081e420175a03f15d", type:"BusinessObject", specialization:decodeURL(""), name:decodeURL("NewItem"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-ad7b7c1a10be42ce9ab78cd1997ab250", contenttype:"Folder"});
+								dataFolders.push({id:"id-ad7b7c1a10be42ce9ab78cd1997ab250", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-e9e6670c6848407e9cc3208790599961", contenttype:"Folder"});
+								dataFolders.push({id:"id-e9e6670c6848407e9cc3208790599961", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-e9e6670c6848407e9cc3208790599961", contentid:"id-02f48fa7897e4713bf90047a87019e51", contenttype:"Device"});
+										dataElements.push({id:"id-02f48fa7897e4713bf90047a87019e51", type:"Device", specialization:decodeURL(""), name:decodeURL("Device"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-adf13260dcae4e699c39e48ceefcf163", contenttype:"Folder"});
+								dataFolders.push({id:"id-adf13260dcae4e699c39e48ceefcf163", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-8c7b194691f64e97ae6f974832576700", contenttype:"Folder"});
+								dataFolders.push({id:"id-8c7b194691f64e97ae6f974832576700", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-03d3926c1a014d64b07571b73b53d2ed", contenttype:"Folder"});
+								dataFolders.push({id:"id-03d3926c1a014d64b07571b73b53d2ed", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-fcca45fe2e94476fa2c358009b01d954", contenttype:"Folder"});
+								dataFolders.push({id:"id-fcca45fe2e94476fa2c358009b01d954", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-fcca45fe2e94476fa2c358009b01d954", contentid:"id-0fa4defca4c342a7b77d9b8417ab48e3", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-0fa4defca4c342a7b77d9b8417ab48e3", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-80c2c5142ef64705a54706cbe79d92e5", targetid:"id-19fe6221977749ebb4acc6c66c050c6f"});
+									dataFoldersContent.push({folderid:"id-fcca45fe2e94476fa2c358009b01d954", contentid:"id-17789e335f2644dbb99c8d5b02057a3a", contenttype:"CompositionRelationship"});
+										dataRelationships.push({id:"id-17789e335f2644dbb99c8d5b02057a3a", type:"CompositionRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-204d54ba13074a268fa2088434aa7826", targetid:"id-80c2c5142ef64705a54706cbe79d92e5"});
+
+								dataFoldersContent.push({folderid:"id-2fe821d562264beda3353cd967174f14", contentid:"id-36843ab7a1a641228f9d629cd1059034", contenttype:"Folder"});
+								dataFolders.push({id:"id-36843ab7a1a641228f9d629cd1059034", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-36843ab7a1a641228f9d629cd1059034", contentid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-d49affb6d8a64466be5ea6e7d5f639d4", type:"ArchimateDiagramModel", name:decodeURL("Default+View"), documentation:decodeURL("")});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-7e43d13031774c98a9685737942925da", contenttype:"BusinessActor"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-d77ff439c93b454dbfcc82f3e6cb1a45", contenttype:"BusinessActor"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-204d54ba13074a268fa2088434aa7826", contenttype:"BusinessObject"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-80c2c5142ef64705a54706cbe79d92e5", contenttype:"BusinessObject"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-19fe6221977749ebb4acc6c66c050c6f", contenttype:"BusinessObject"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-99aa4f5a6625486494c2e059576bd59f", contenttype:"BusinessObject"});
+												dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-41fdf4615fb345f081e420175a03f15d", contenttype:"BusinessObject"});
+
+																		dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-17789e335f2644dbb99c8d5b02057a3a", contenttype:"CompositionRelationship"});
+
+																		dataViewsContent.push({viewid:"id-d49affb6d8a64466be5ea6e7d5f639d4", contentid:"id-0fa4defca4c342a7b77d9b8417ab48e3", contenttype:"CompositionRelationship"});
+
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
