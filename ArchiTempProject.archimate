@@ -8,6 +8,7 @@
     <element xsi:type="archimate:BusinessObject" name="Integration Platform" id="id-80c2c5142ef64705a54706cbe79d92e5"/>
     <element xsi:type="archimate:BusinessObject" name="M365" id="id-19fe6221977749ebb4acc6c66c050c6f"/>
     <element xsi:type="archimate:BusinessObject" name="RandomNewSystem" id="id-99aa4f5a6625486494c2e059576bd59f"/>
+    <element xsi:type="archimate:BusinessObject" name="NewItem" id="id-41fdf4615fb345f081e420175a03f15d"/>
   </folder>
   <folder name="Application" id="id-ad7b7c1a10be42ce9ab78cd1997ab250" type="application"/>
   <folder name="Technology &amp; Physical" id="id-e9e6670c6848407e9cc3208790599961" type="technology">
@@ -41,6 +42,9 @@
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-f881732eb3aa4993966b5de8a58f5f80" archimateElement="id-99aa4f5a6625486494c2e059576bd59f">
         <bounds x="290" y="537" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f4062b84955b44af87a6ce9957643a86" archimateElement="id-41fdf4615fb345f081e420175a03f15d">
+        <bounds x="647" y="149" width="120" height="55"/>
       </child>
     </element>
   </folder>
